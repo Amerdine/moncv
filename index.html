@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Mon CV</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <!-- Overlay d'abord -->
+            <div id="overlay" class="overlay" onclick="hidePopup()"></div>
+            <!-- Puis la popup -->
+            <div id="popupContact" class="popup">
+                <p>📧 amerdinedjambae@gmail.com</p>
+                <p>📱 0782236701</p>
+            </div>
+            <!-- Premier page du cv partie presentation Nom + info + mail + tel +Adresse-->
+                <div class="main-page">
+                    <div class="div-presentation">
+                        <div class="name">
+                            <h1>Djambae Amerdine</h1>
+                            <h2>| Étudiant en Informatique |</h2>
+                        </div>
+                        <div class="bloc">               
+                            <!-- DIV principale cliquable -->
+                            <div class="contact" onclick="togglePopup(event)">
+                                <p>📞 Cliquez ici pour mes contacts</p>
+                            </div>
+                            
+                            <div class="adresse">
+                                <p>Adresse: Tours</p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            <!-- Deuxieme page parcours scolaire -->
+                <div class="formation">
+                    <div class="title-f"><h3><u>Formation</u></h3></div>
+                    <div class="bloc-f">
+                        <div class="item-f item-f-1">
+                            <h4>
+                                <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-cybersecurite-informatique-et-reseaux-electronique-option-a-informatique-et-reseaux">
+                                BTS CIEL IR
+                            </a>
+                            </h4>
+                            <p>2024/2025</p>
+                            <p>Lycée Grandmont - Tours</p>
+                        </div>
+                        <div class="item-f item-f-2">
+                            <h4>BUT informatique</h4>
+                            <p>2023/2024</p>
+                            <p>IUT de Nantes - Campus de Nantes</p>
+                        </div>
+                        <div class="item-f item-f-3">
+                            <h4>
+                                BACCALAURÉAT
+                            </h4>
+                            <p>2024/2025</p>
+                            <p>Lycée polyvalent Gustave Eiffel de Kahani - Mayotte</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- 3 page parcours scolaire -->
+                <div class="presentation-page">
+                    <div class="profil">
+                        <h5><u>Profil</u></h5>
+                        <p>Étudiant en première année de BTS CIEL IR (Cybersécurité, Informatique et Réseaux), je possède une solide base en développement informatique, notamment en Python, C++ et d'autres langages. Mon parcours m’a permis de développer des compétences en analyse de réseaux, en sécurité des systèmes informatiques et en programmation, que je souhaite approfondir au sein d’une équipe dynamique et innovante.</p>
+                    </div>
+                    <div class="atouts">
+                        <h5><u>Atouts</u></h5>
+                        <p>Très appliqué dans tout ce que je fais</p>
+                        <p>je suis également à l'écoute des conseils.</p>
+                    </div>
+                    <div class="interet">
+                        <h5><u>Centres d'intérêt</u></h5>
+                        <p>Dans mon temps libre, j'aime assembler et programmer des appareils électroniques grâce à Arduino. J’apprécie également l’apprentissage de nouveaux langages de programmation et, en ce moment, j’étudie le langage Rust afin d’élargir mes compétences techniques.</p>
+                    </div>
+                </div>
+            <!-- 4 page -->
+                <div class="competence-page">
+                    <div class="title-c"><h3><u>COMPÉTENCES</u></h3></div>
+                    <div class="bloc-c">
+                        <p>J’ai acquis une base solide dans de nombreux langages de programmation. Grâce à mes études actuelles en BTS CIEL IR, ainsi qu’à mon année précédente en IUT Informatique, j’ai pu élargir mes compétences en informatique. Je me suis également formé au développement web (HTML, CSS) ainsi qu’à la création d’applications en utilisant des langages comme Kotlin.</p>
+                    </div>
+                    <div class="logo">
+                        <div class="icon">
+                            <i class="devicon-html5-plain custom-color" title="HTML5"></i>
+                            <i class="devicon-css3-plain custom-color" title="CSS3"></i>
+                            <i class="devicon-kotlin-plain custom-color" title="Kotlin"></i>
+                            <i class="devicon-cplusplus-plain custom-color" title="C++"></i>
+                            <i class="devicon-python-plain custom-color" title="Python"></i>
+                        </div>
+                    </div>
+                </div>
+            <!-- fin de site -->
+            <script src="script.js"></script>
+        </body>
+    </html>
